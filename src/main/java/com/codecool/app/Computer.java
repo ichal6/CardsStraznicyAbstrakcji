@@ -16,6 +16,7 @@ public class Computer extends Player {
     public Computer(List<Card> cards) {
         super(cards);
         name = "Computer";
+        calculateBestAttribute();
     }
 
     public void calculateBestAttribute() {
