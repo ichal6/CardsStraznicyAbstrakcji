@@ -32,29 +32,26 @@ public class CardTest {
     }
 
     @Test
-    public void should_weaker_card_return_minus_result() {
-
+    public void should_weaker_card_return_negative_result() {
         int result = card.compareTo(card2);
         //then
         Assert.assertTrue(result < 0);
-
     }
-    @Test
-    public void should_stronger_card_return_plus_result() {
 
+    @Test
+    public void should_stronger_card_return_positive_result() {
         int result = card2.compareTo(card);
         //then
         Assert.assertTrue(result > 0);
-
     }
+
     @Test
     public void should_equal_card_return_zero_result() {
-
         int result = card2.compareTo(card2);
         //then
         Assert.assertTrue(result == 0);
-
     }
+
     @Test
     public void should_method_equals_true() {
         boolean expected = true;
@@ -63,6 +60,7 @@ public class CardTest {
         //then
         Assert.assertEquals(expected, result);
     }
+
     @Test
     public void should_method_equals_false() {
         boolean expected = false;
